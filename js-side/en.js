@@ -1,6 +1,6 @@
 "CtaButtonSettings": {
         "button1": {
-            "card": "d2166039",
+            "card": "3b8e7814",
             "label": "Contact",
             "icon": "contact"
         },
