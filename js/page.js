@@ -3,6 +3,10 @@
 
 
 function myFunction() {
-  document.getElementById("btn1").innerHTML="3b8e7814";
-    
-}
+  var x = document.getElementById("3b8e7814");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}}
