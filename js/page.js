@@ -3,7 +3,7 @@
 
 
 function myFunction() {
-  var x = document.getElementById("3b8e7814");
+  var x = document.getElementById("btn1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
