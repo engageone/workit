@@ -15,7 +15,14 @@
     background-position:0px -268px;
 }
 
-
+@media (min-width: 0px) and (max-width: 700px) {
+    .sideButtons-5{ margin-top: 517px;
+    display: flex;
+    z-index: 9999;
+    position: absolute;
+    margon-left: 50px;
+    margin-left: -77px;  } 
+}
 body{ background-color: #bababa;
     background-image: url(../images/background-texture-slice.jpg);
     height: 100%;
