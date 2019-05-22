@@ -53,10 +53,11 @@ border-right:none;
     background-position: -8px -75px;   
 }
 .time-forward{
-    width:30px !important;
+    width:20px !important;
     background-position: -8px -58px !important;
     height:30px !important;
     margin-left:33px !important;
+    margin-top:0px;
 }
 .footer-bg{
     width:310%
