@@ -1,3 +1,27 @@
+@media (min-width:700px) and (max-width:799px){
+    .time-sound1{
+        margin-left:430px;
+        margin-top:-52px;
+    }
+    .time-sound2{
+        margin-left:470px;
+    }.sideButtons-5{
+width:100px;
+
+}
+    .bar {
+        width:65%;
+    }
+    .sideButtons-5{
+        margin-left:-80px;
+        margin-top:65px;
+    }
+}
+
+
+
+
+
 @media (min-width:800px) and (max-width:899px){
     .time-sound1{
         margin-left:610px;
