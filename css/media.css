@@ -13,7 +13,20 @@ width:100px;
         width:82%;
     }
 }
-
+@media (min-width:900px) and (max-width:999px){
+    .time-sound1{
+        margin-left:510px;
+        margin-top:-52px;
+      .bar {
+        width:60%;
+    }
+      margin-top:-50px
+    }
+    .time-sound2{
+        margin-left:550px;
+    
+}
+}
 
 
 
