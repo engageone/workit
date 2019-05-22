@@ -1,3 +1,21 @@
+@media (min-width:600px) and (max-width:699px){
+    .time-sound1{
+        margin-left:430px;
+        margin-top:-52px;
+    }
+    .time-sound2{
+        margin-left:470px;
+    }.sideButtons-5{
+margin-left:-60px
+}
+    .bar {
+        width:64%;
+    }
+    
+}
+
+
+
 @media (min-width:700px) and (max-width:767px){
     .time-sound1{
         margin-left:430px;
