@@ -479,7 +479,7 @@ margin-top:0px;
  border-left:1px solid black;
   border-right:1px solid black;
   border-bottom:1px solid black;
-  margin-top:-70px;
+  margin-top:0px;
 }.bar {
   width:55%;
   border-right:none;
@@ -500,7 +500,7 @@ margin-top:0px;
    width:36px;
 float:left;
 margin-left:93px;
-margin-top:-70px;
+margin-top:-50px;
 border-right:1px solid black;
   border-bottom:1px solid black;
 }
