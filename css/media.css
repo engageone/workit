@@ -15,15 +15,15 @@ width:100px;
 }
 @media (min-width:900px) and (max-width:999px){
     .time-sound1{
-        margin-left:510px;
+        margin-left:610px;
         margin-top:-52px;
       .bar {
-        width:60%;
+        width:79%;
     }
       margin-top:-50px
     }
     .time-sound2{
-        margin-left:550px;
+        margin-left:650px;
     
 }
 }
