@@ -1,3 +1,21 @@
+.sideButtons li {
+    width: 76px;
+    height: 67px;
+    background: url("../images/side-btns.png");
+    position: relative;
+}
+.sideButtons .website {
+    background-position: 0px -67px;
+}
+.sideButtons .customer-login:hover {
+    background-position: 76px -134px;
+}.sideButtons .feedback {
+    background-position: 0px -201px;
+}.sideButtons .download-app{
+    background-position:0px -268px;
+}
+
+
 body{ background-color: #bababa;
     background-image: url(../images/background-texture-slice.jpg);
     height: 100%;
