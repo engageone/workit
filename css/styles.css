@@ -52,8 +52,8 @@ img{ max-width: 100%;}
 .sidebutton2 img{ cursor: pointer;}
 .sidebutton3 img{ cursor: pointer;}
 .main{ background: #fff; padding: 50px; height: 640px; }
-.left-side{ float: left; margin-top: -534px;margin-left:100px;}
-.right-side{ width:auto; margin-top: 70px; }
+#sideButtonsWrapper{ float: left; margin-top: -534px;margin-left:100px;}
+#sideButtonsLayer{ width:auto; margin-top: 70px; }
 iframe{ border: none;}
 /*footer{ background:#0072b8; margin-left:20px;  margin-top: 0px;}
 */.footer-bg{ background: #07609D; height:170px;margin-top: -70px;
