@@ -907,7 +907,66 @@ border-right:none !important;
 .a-bar{
     font-size:8px;
 }}
+@media (min-width: 101px) and (max-width: 200px) {
+    .time-sound1 {
+        margin-left:150px !important;
+        height:30px !important;
+    width:27px;
+    background-position: -8px -62px;   
+    margin-top:-30px !important;
+    
+}
+    .time-sound2 {
+        margin-left:250px !important;
+        height:30px !important;
+    width:27px;
+    background-position: -8px -158px; 
+    margin-top:-30px !important;
+     
+}
+    
+.time-backword{
+    height:30px !important;
+    width:20px;
+    background-position: -8px -58px;
+    margin-left:-17px;
+}
+.time-playpause {
+    height:30px !important;
+    width:25px;
+    margin-left:3px;
+   
+    background-position: -8px -75px;   
+}
+.time-forward{
+    width:20px !important;
+    background-position: -8px -58px !important;
+    height:30px !important;
+    margin-left:35px !important;
+    margin-top:-30px
+}
+.bar {
+    margin-left: 40px;
+    height:30px;
+    margin-top:-30px;
+    width:67%!important;
+border-right:none !important;
 
+
+}
+.sideButtons-5{
+    margin-left:-155px;
+    width:110% !important;
+    margin-top:500px
+
+}
+.a-bar{
+    font-size:px!important;
+    border-right:none !important;
+    clear:both;
+    margin-left:-10px;
+    font-size:5pxm !important;
+}}
 
 
 
