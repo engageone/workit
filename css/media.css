@@ -517,35 +517,6 @@ margin-left:-60px
         font-size: 8px;
     }}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width:600px) and (max-width:699px){
     .time-sound1{
         margin-left:430px;
@@ -559,7 +530,9 @@ margin-left:-60px
     .bar {
         width:64%;
     }
-    
+    .bar .a-bar {
+        font-size: 10px;
+    }
 }
 @media (min-width:992px) and (max-width:999px){
     .time-sound1{
