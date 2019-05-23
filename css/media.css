@@ -586,7 +586,9 @@ margin-left:-60px
     }.sideButtons-5{
 width:100px;
 
-}
+}.bar .a-bar {
+        font-size: 10px;
+    }
     .bar {
         width:65%;
     }
@@ -608,7 +610,9 @@ width:100px;
     }.sideButtons-5{
 width:100px;
 
-}
+}.bar .a-bar {
+        font-size: 10px;
+    }
     .bar {
         width:74%;
     }
