@@ -1,6 +1,7 @@
 html,body{
 margin:0px;
     padding:0px;
+	overflow:hidden;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
