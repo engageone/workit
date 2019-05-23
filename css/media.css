@@ -566,11 +566,14 @@ width:100px;
         width:65%;
     }
     .sideButtons-5{
-        margin-left:-80px;
+        margin-left:-124px;
         margin-top:65px;
     }  .wrap{
         margin-left:170px;
         margin-top:50px;
+    }
+    .main{
+    margin-left:-70px;
     }
 }
 @media (min-width:768px) and (max-width:799px){
