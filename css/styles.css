@@ -1,4 +1,11 @@
-.sideButtons li {
+html,body{
+margin:0px;
+    padding:0px;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    	vertical-align: baseline;
+}.sideButtons li {
     width: 76px;
     height: 67px;
     background: url("../images/side-btns.png");
