@@ -1,4 +1,283 @@
-@media (min-width: 571px) and (max-width:576px) {
+@media (min-width: 400px) and (max-width:411px) {
+    .time-sound1 {
+        margin-left:300px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 340px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 52%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 481px) and (max-width:499px) {
+    .time-sound1 {
+        margin-left:380px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 420px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -80px
+    }
+
+    .bar {
+        width: 60%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 471px) and (max-width:480px) {
+    .time-sound1 {
+        margin-left:365px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 408px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -120px
+    }
+
+    .bar {
+        width: 58%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+
+
+@media (min-width: 464px) and (max-width:470px) {
+    .time-sound1 {
+        margin-left:355px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 398px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -120px
+    }
+
+    .bar {
+        width: 57%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 450px) and (max-width:463px) {
+    .time-sound1 {
+        margin-left:349px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 390px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -120px
+    }
+
+    .bar {
+        width: 57%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 446px) and (max-width:450px) {
+    .time-sound1 {
+        margin-left:339px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 379px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 56%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 441px) and (max-width:449px) {
+    .time-sound1 {
+        margin-left:339px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 379px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 56%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+
+@media (min-width: 441px) and (max-width:450px) {
+    .time-sound1 {
+        margin-left:339px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 379px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 56%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 436px) and (max-width:440px) {
+    .time-sound1 {
+        margin-left:329px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 369px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 56%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 436px) and (max-width:445px) {
+    .time-sound1 {
+        margin-left:333px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 372px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 56%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+
+@media (min-width: 431px) and (max-width:435px) {
+    .time-sound1 {
+        margin-left:323px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 362px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 55%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+
+@media (min-width: 412px) and (max-width:420px) {
+    .time-sound1 {
+        margin-left:280px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 320px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 46%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+@media (min-width: 421px) and (max-width:430px) {
+    .time-sound1 {
+        margin-left:290px;
+        margin-top: -50px;
+    }
+
+    .time-sound2 {
+        margin-left: 330px;
+    }
+
+    .sideButtons-5 {
+        margin-left: -140px
+    }
+
+    .bar {
+        width: 46%;
+    }
+
+    .bar .a-bar {
+        font-size: 10px;
+    }}
+
+media (min-width: 571px) and (max-width:576px) {
     .time-sound1 {
         margin-left:430px;
         margin-top: -50px;
