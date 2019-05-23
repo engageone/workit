@@ -15,8 +15,8 @@ margin:0px;
 .sideButtons .website {
     background-position: 0px -67px;
 }
-.sideButtons .customer-login:hover {
-    background-position: 76px -134px;
+.sideButtons .customer-login {
+    background-position: 0px -134px;
 }.sideButtons .feedback {
     background-position: 0px -201px;
 }.sideButtons .download-app{
