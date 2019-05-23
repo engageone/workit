@@ -46,12 +46,12 @@ img{ max-width: 100%;}
 .wrap{
   background-image: url(../images/background1.jpg);
  padding-top:30px !important; 
-  height:270px;
-  width:50%;
+  height:336px;
+  width:71%;
   align-content: center; 
   float:center;
  margin-top:122px;
- margin-left:300px;
+ margin-left:200px;
  
   
 }
