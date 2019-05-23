@@ -349,7 +349,7 @@ margin-top:0px;
   border-bottom:1px solid black;
 }
 
-.bar .a-bar:not(:first-child) {
+      .bar .a-bar:not(:first-child) {display:none;}
   .bar .a-bar.icon {
     float: right;
     display: block;
