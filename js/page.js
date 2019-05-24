@@ -88,3 +88,45 @@ $(document).ready(function() {
      */
     KeyboardInputController.initialise();
 });
+var Utils = {
+    /**
+     * Checks whether the current useragent is in the provided array of regular expressions
+     * Taken in part from the jPlayer _uaBlocklist method.
+     *
+     * @param {string} userAgent     the current user agent
+     * @param {array}  userAgentList the user agents (in the form of regular expressions) to check against
+     *
+     * @return {boolean} whether the current user agent is in the list
+     */
+    userAgentInList: function(userAgent, userAgentList) {
+        var inList = false;
+        userAgent = userAgent.toLowerCase();
+
+        /**
+         * Test each agent in the list against the one provided
+         *
+         * @param {number} index the array index
+         * @param {string} agentExpression the regular expression to test
+         */
+        $.each(userAgentList, function testEachAgent(index, agentExpression) {
+            if (agentExpression.test(userAgent)) {
+                inList = true;
+                return false;
+            }
+        });
+
+        return inList;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
