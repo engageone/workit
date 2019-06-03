@@ -187,21 +187,30 @@ bc("myPlayerID", options);
                             <div class="buffer-right"></div>
                                 <div class="timeline-right">
                                 
-					
-					<div id="quality" class="time-sound1">
-<div id="jsCCMenuTitle" class="timeline__settings-heading timeline__settings-heading--clickable" tabindex="0">
+					<div class="time-sound1">
+					<div id="jsTimelineControlsRight" class="timeline__controls timeline__controls--right" >
+                        <button id="jsSettingsButton" type="button" class="jsTimelineButton timeline__button timeline__button--settings no-focus">
+                            <span id="jsSettingsButtonIcon" class="timeline__button-icon timeline__button-icon--settings"></span>
+                            <span class="sr-only translate" data-translate="SettingsButtonText">Settings</span>
+                        </button>
 
-             <div id="jsCCOffTick" class="timeline__button-icon timeline__button-icon--tick"></div>
-	 <div id="jsCCOnTick" class="timeline__button-icon timeline__button-icon--tick"></div>
-			<div id="qualitypopup" style="display: none;">
-				<div id="qualityhigh" ></div>
-				<div id="qualitystandard" class=""></div>
-				<div id="qualityauto" style="display: none;"></div>
-			</div>
-			<div id="qualitybtn" class="high"></div>
-						</div>
+                        <div id="jsSettingsContainer" class="timeline__settings">
+                            <div id="jsSettingsButtonPopout" class="timeline__settings-popout jsSettingsPanel">
+                                <div class="timeline__settings-heading">
+                                    <span class="translate" data-translate="SettingsButtonText">Settings</span>
+                                </div>
 
-</div>
+                                <div id="jsQualityMenuItem" class="timeline__settings-item no-focus" data-setting="quality" tabindex="0">
+                                    <div class="timeline__settings-icon timeline__settings-icon--left">
+                                        <div id="jsQualityMenuIcon" class="timeline__button-icon timeline__button-icon--hd"></div>
+                                    </div>
+                                    <div class="timeline__settings-text">
+                                        <span class="translate" data-translate="QualityMenuText">Quality</span>
+                                    </div>
+                                    <div class="timeline__settings-icon timeline__settings-icon--right timeline__settings-icon--small">
+                                        <div class="timeline__button-icon timeline__button-icon--right-arrow"></div>
+					</div></div>
+
                                  <div class="time-sound2"></div>
                     </div> 
 
