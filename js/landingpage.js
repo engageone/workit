@@ -229,7 +229,28 @@ var ClosedCaptionSelector = {
             $('#jsCCOnTick').hide();
         }
     },
+ events: {
+        /**
+         * Link up the events and the event handlers
+         */
+        initialise: function() {
+            $('#jsCCMenuTitle').click(ClosedCaptionSelector.events.closeCCMenu);
+            $('.jsTimelineSettingsCaption').click(ClosedCaptionSelector.events.ccItemClickEventHandler);
+        },
 
+        closeCCMenu: function (e) {
+            $('#jsSettingsButtonPopout').show();
+            $('#jsCCSelectorPopout').hide();
+            $("#jsCCMenuItem").focus();
+        },
+
+        ccItemClickEventHandler: function(e) {
+            //off or on
+            var newValue = $(this).data('value');
+            ClosedCaptionSelector.setClosedCaptions(newValue);
+        }
+    }
+};
 
 
 
