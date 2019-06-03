@@ -123,3 +123,65 @@ var Utils = {
         return (new Date()).getFullYear();
     }
 };
+var BufferStatus = {
+
+    seenStates: [],
+
+    initBuffer: function () {
+        if(Timeline.SettingsJsonObject.BufferBarEnabled){
+            BufferStatus.createBufferDivs();
+        }
+    },
+
+    createBufferDivs: function () {
+        var counter = 1;
+
+        var bufferSectionHTMLTemplate =
+            '<div id="jsBufferSection" class="timeline__buffer-section"> \
+                <div id="jsSectionInner" class="timeline__buffer-section-inner"></div> \
+            </div>';
+
+        var bufferTimeline = $('#jsBufferTimeline');
+
+        bufferTimeline.children().remove();
+
+        $('.jsTimelineState').each(function () {
+            var stateTemplate = $(bufferSectionHTMLTemplate).clone();
+            var stateName = $(this).data('state');
+            var stateWidth = $(this).data('percent-width');
+            stateTemplate.attr('id', 'jsBufferSection'+counter);
+            stateTemplate.data('interaction-id', stateName);
+            stateTemplate.find('.timeline__buffer-section-inner').attr('id', 'jsSectionInner' + stateName);
+            stateTemplate.css('width', stateWidth + "%");
+            bufferTimeline.append(stateTemplate);
+            counter++;
+        });
+        BufferStatus.applyBufferSettings();
+    },
+
+    applyBufferSettings: function () {
+        var opacity = Timeline.SettingsJsonObject.BufferBarOpacity;
+        var color = Timeline.SettingsJsonObject.BufferBarColor;
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
