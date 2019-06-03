@@ -164,6 +164,28 @@ var BufferStatus = {
         var color = Timeline.SettingsJsonObject.BufferBarColor;
     },
 
+    updateBuffer: function () {
+        if(LanguageSelector.currentLanguageObj !== {}){
+            try {
+                var videoTimes = VideoPlayerInterface.iframeWindow.rtc.player.getVideoTimes(),
+                    currentState = Timeline.getStateFromProgress(),
+                    chapters = VideoPlayerInterface.getVideoChapters();
+
+                //Checks if the video has reached the end and prevents the introduction buffer bar loading
+                if(Timeline.getProgress() !== 1){
+                    if(isInArray(currentState,BufferStatus.seenStates)){
+                        $.each(chapters, function(state, chapter) {
+                            if (videoTimes.buffered > chapter.start + chapter.duration) {
+                                BufferStatus.updateStateBufferProgress(state, 100);
+                            } else {
+                                BufferStatus.updateStateBufferProgress(
+                                    state,
+                                    ((videoTimes.buffered - chapter.start) / chapter.duration) * 100
+                                );
+                            }
+                        });
+                    }
+                }
 
 
 
