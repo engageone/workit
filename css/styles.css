@@ -97,16 +97,15 @@ table td a:hover{ color: #fff; text-decoration: none;}
 .hidden{ display: none;}
 .footer-timeline{ margin-left:0px; margin-top:-20px;}
 
-/*.timeline-buffering {
- 
-  margin-top:-11px;
-  margin-left:160px;
-  width: 62.5%;
+.timeline-buffering {
+
+  
+  width:100%;
   height: 20px;
   background-color: #047;
  
   
-}*/
+}
 .time-backword{
   height: 50px;
   width: 43px;
