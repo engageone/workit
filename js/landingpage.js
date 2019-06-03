@@ -289,7 +289,24 @@ var ContrastProgress = {
      * Update the labels used on the Contrast Progress bar, by cloning them into the contrast div
      */
 
+ updateLabels: function() {
+        if (!ContrastProgress.enabled) {
+            return;
+        }
 
+        $("#jsTimelineContrastFixed").empty();
+
+        /**
+         * Append each timeline chapter to the contrast progress bar
+         *
+         * @param {number} i       the index
+         * @param {jQuery} chapter the chapter element
+         */
+        $(".jsTimelineChapter").each(function appendChapterToContrast(i, chapter) {
+            $(chapter).clone(true).appendTo("#jsTimelineContrastFixed");
+        });
+    }
+};
 
 
 
