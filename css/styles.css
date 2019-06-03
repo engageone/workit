@@ -97,7 +97,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
 .hidden{ display: none;}
 .footer-timeline{ margin-left:0px; margin-top:-20px;}
 
-.timeline-buffering {
+/*.timeline-buffering {
  
   margin-top:-11px;
   margin-left:160px;
@@ -106,7 +106,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
   background-color: #047;
  
   
-}
+}*/
 .time-backword{
   height: 50px;
   width: 43px;
@@ -246,13 +246,13 @@ margin-top:0px;
  margin-left:10%;
  }
 
- .buffer{
+/* .buffer{
   background: url(../images/volume-slider-ball.png);
   height:20px;
   background-repeat: no-repeat;
   
   margin-top:-5px; 
-}
+}*/
 
 
 .mobileview{ visibility: hidden; }  
@@ -541,7 +541,7 @@ border-right:1px solid black;
   border-bottom:1px solid black;
 }  }
 
-.slidecontainer {
+/*.slidecontainer {
   width: 100%;
 }
 
@@ -579,6 +579,6 @@ border-right:1px solid black;
   border-radius: 50%;
   background: #4CAF50;
   cursor: pointer;
-}
+}*/
 
 
