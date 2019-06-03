@@ -253,7 +253,41 @@ var ClosedCaptionSelector = {
 };
 
 
+var ContrastProgress = {
+    enabled: false,
 
+    initialise: function (timelineSettings){
+        ContrastProgress.enabled = timelineSettings.ContrastProgressBarEnabled;
+
+        if (ContrastProgress.enabled) {
+            ContrastProgress.createContrastTimeline();
+        }
+    },
+
+    createContrastTimeline: function (){
+        ContrastProgress.cloneDivAppendTo("jsTimelineContainer", "jsTimelineContrast", "jsTimelineControlsCenter");
+        $("#jsTimelineContrast").addClass("timeline-contrast");
+        $("#jsTimelineProgressHover").addClass("timeline-contrast-hover");
+
+        ContrastProgress.addFixedDiv();
+    },
+
+    cloneDivAppendTo: function (divId, newDivId, appendToDivID) {
+        $('#' + divId).clone(true).prop('id', newDivId).appendTo('#' + appendToDivID);
+    },
+
+    addFixedDiv: function () {
+        $("#jsTimelineContrast").wrapInner("<div id='jsTimelineContrastFixed'></div>");
+        $("#jsTimelineContrastFixed").css('width', $("#jsTimelineContainer").width() + "px");
+    },
+
+    setContrastTimelineProgress: function (progress){
+        $("#jsTimelineContrast").width($("#jsTimelineContainer").width() * progress);
+    },
+
+    /**
+     * Update the labels used on the Contrast Progress bar, by cloning them into the contrast div
+     */
 
 
 
