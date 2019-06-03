@@ -187,7 +187,48 @@ var BufferStatus = {
                     }
                 }
 
+if(!isInArray(currentState,BufferStatus.seenStates)){
+                    BufferStatus.seenStates.push(currentState);
+                }
+                BufferStatus.clearOldBuffers(currentState);
+            } catch (e) {}
+        }
+    },
 
+    clearOldBuffers: function (currentState) {
+        for (var i=0; i < BufferStatus.seenStates.length; i++){
+            var state = BufferStatus.seenStates[i];
+            if(state !== currentState) {
+                BufferStatus.updateStateBufferProgress(state,0);
+            }
+        }
+    },
+      updateStateBufferProgress: function(state, percentage) {
+        if (typeof state === "string"){
+            $('#jsSectionInner'+state).css('width', percentage + "%");
+        }
+    }
+};
+var ClosedCaptionSelector = {
+
+    initialise: function () {
+        ClosedCaptionSelector.events.initialise();
+        $('#jsCCOffTick').show();
+        $('#jsCCOnTick').hide();
+    },
+
+    setClosedCaptions: function(value){
+        var captionsOn = VideoPlayerInterface.iframeWindow.rtc.player.vars.showCaptions;
+        if (value === 'on' && !captionsOn) {
+            VideoPlayerInterface.iframeWindow.rtc.player.toggleCC();
+            $('#jsCCOnTick').show();
+            $('#jsCCOffTick').hide();
+        } else if (value === 'off' && captionsOn) {
+            VideoPlayerInterface.iframeWindow.rtc.player.toggleCC();
+            $('#jsCCOffTick').show();
+            $('#jsCCOnTick').hide();
+        }
+    },
 
 
 
