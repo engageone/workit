@@ -27,9 +27,9 @@ margin:0px;
 }
 .timeline__controls--left{
 background-color:#2c8cd9;
-	height:100px;
-	width:1600px;
-	margin-left:18rem;
+	height:50px;
+	width:1500px;
+	margin-left:19rem;
 	
 }
 @media (min-width: 0px) and (max-width: 700px) {
