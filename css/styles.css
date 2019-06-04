@@ -121,7 +121,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
   border-right:1px solid black;
   border-bottom:1px solid black;
    position:static;
-   margin-left:30px;
+ 
    padding-top:-50px;
    background-position: 0px -55px;
 }
@@ -130,7 +130,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
    height:50px;
    width:40px;
 float:left;
-margin-left:180px;
+
 border-right:1px solid black;
   border-bottom:1px solid black;
   background-position: 0px -52px;
