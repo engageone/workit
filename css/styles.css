@@ -123,6 +123,8 @@ table td a:hover{ color: #fff; text-decoration: none;}
   border-bottom:1px solid black;
   background-position: 0px -52px;
   position:static;
+	margin:0px;
+	padding:0px;
 }
 #jsPlayPauseButton{ background: url(../images/play-btn.png) 0px 0px no-repeat;
   height:50px;
