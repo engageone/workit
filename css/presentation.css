@@ -372,7 +372,7 @@
 .timeline__button--volume {
     width: 45px;
 }
-
+/*
 .timeline__button-icon {
     --timeline-bgX: 0%;
     --timeline-bgY: 50%;
@@ -385,7 +385,7 @@
     background-position-y: 50%;
     background-position: var(--timeline-bgX) var(--timeline-bgY);
     background-size: 2700% 300%;
-}
+}*/
 
 .fullscreen .timeline__button-icon {
     width: 28px;
