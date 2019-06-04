@@ -52,7 +52,7 @@
 }
 
 /** Main Styling (for 1080p) **/
-.body {
+/*.body {
     background-color: #0A5694;
     font-family: "OpenSans_Regular", Arial;
 }
@@ -75,7 +75,7 @@
     display: none;
 }
 
-/*.header__logo {
+.header__logo {
     width:100%;
     height:275px;
     background: url("../images/pb_demo_header.jpg") no-repeat;
@@ -190,8 +190,8 @@
 
 .cta--side,
 .promo--side {
- /* background-color: #2e2e2e;*/
-}*/
+ --background-color: #2e2e2e;--
+}
 
 .cta__button {
     color: #fff;
@@ -296,7 +296,7 @@
 
 .player {
    /* background-color: #dbdbdb;*/
-    margin-bottom:80px;
+  /*  margin-bottom:80px;
 }
 
 .promo__item {
@@ -326,7 +326,7 @@
 .promo__link:active,
 .focusable.promo__link:focus {
     text-decoration: underline;
-}
+}*/
 
 .timeline {
     color: #fff;
