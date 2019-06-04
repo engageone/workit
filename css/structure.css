@@ -239,11 +239,14 @@ sub {
 }
 
 .player {
-  height: 500px;
+    height: 500px;
     margin-left: 426px;
-     margin-top: -480px; 
+    margin-top: -639px;
     z-index: 99999;
 }
+
+
+
 
 .fullscreen .player {
     width: 95%;
