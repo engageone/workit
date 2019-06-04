@@ -1,3 +1,11 @@
+#back-slide{
+background:url("../images/background1.jpg");
+	height:100%;
+	width:100%;
+	margin-left:100px;
+}
+
+
 
 /*html,body{
 margin:0px;
