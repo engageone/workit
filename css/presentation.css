@@ -332,7 +332,9 @@
     color: #fff;
    background-color: #0A5694;
     font-size: 20px;
-    height:200px;
+    height:250px;
+    margin-left:-107px;
+    width:112.2%;
 }
 
 /*.timeline__cover {
