@@ -105,7 +105,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
   
 }
 #mainwidth{
-width:1700px;
+max-width:1700px;
 
 }
 #jsSkipBackButton{
