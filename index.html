@@ -96,7 +96,34 @@ bc("myPlayerID", options);
         
 </head>
 <body>
-        <header class="header-action">
+	
+<body class="body">
+    <header id="jsHeader" class="header">
+            
+            <br class="clearfix" />      
+
+            
+        </header>
+   <div id="jsTopWrapper" class="top-wrapper top-wrapper--no-promo">
+        
+
+        <main id="jsMain" class="main">
+            <div class="cta cta--side jsCtaContainer"></div>
+
+            <div class="player">
+                <div class="player__wrapper">
+                    <div class="player__iframe" id="jsPlayerIframe">
+                        {{VIDEO_IFRAME}}
+
+                        <div id="jsResumeSplash" class="player__splash">
+                            <div class="player__splash-image player__splash-image--white"></div>
+                            <span class="sr-only translate" data-translate="ResumeVideoPlayback">Resume Video Playback</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       <!-- <header class="header-action">
                 <div class="container" id="mainwidth">
                 <div class="logo">
                     <img src="images/header.jpg" alt="">
@@ -113,7 +140,7 @@ bc("myPlayerID", options);
 				<iframe  {{VIDEO_IFRAME}}  >
                         </iframe>
 		 </div>
-	</div>
+	</div>-->
                         <!-- <iframe  {{VIDEO_IFRAME}}  >
                         </iframe></div></div>
                        <!-- <div class="right-side">
@@ -132,7 +159,7 @@ bc("myPlayerID", options);
                                 <img src="images/contact.jpg" alt="" >
                             </div>
                                 </div> -->
-                 <div id="sideButtonsLayer">
+                <!-- <div id="sideButtonsLayer">
 	<div id="sideButtonsWrapper">
 		<ol class="sideButtons sideButtons-5" style="list-style-type: none;">
 <li class="contact"></li><li class="website"></li><li class="customer-login"></li><li class="feedback"></li><li class="download-app"></li>		</ol>
@@ -143,7 +170,7 @@ bc("myPlayerID", options);
                 </div> 
                 <div class="clearfix"></div>
                
-             </div>
+             </div>-->
          
 <!--<footer>
          <div class="footer-bg">
@@ -216,6 +243,10 @@ bc("myPlayerID", options);
 
 			
                 </footer>-->
+    <div id="jsBottomWrapper" class="bottom-wrapper bottom-wrapper--no-cta bottom-wrapper--no-promo">
+
+
+            <div id="jsPromoContainerMobile" class="promo promo--bottom jsPromoContainer"></div>
 <footer class="footer" style="width:1900px;">
 		      <div class="footer_image" >
 		     <div id="jsTimeline" aria-controls="videoPlayerIframe" class="timeline">
