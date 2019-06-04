@@ -107,7 +107,7 @@ table td a:hover{ color: #fff; text-decoration: none;}
 #jsSkipBackButton{
   height: 50px;
   width: 43px;
-  margin-left:22rem;
+  margin-left:28rem;
   background: url(../images/skipback.png) 0px 0px no-repeat;
  border-left:1px solid black;
   border-right:1px solid black;
