@@ -137,7 +137,7 @@ border-right:1px solid black;
   background-position: 0px -52px;
   position: static;;
 }
-.time-sound1{
+#time-sound1{
   background:url(../images/quality-btn.png);
   height:50px;
   width:40px;
