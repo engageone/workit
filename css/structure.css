@@ -241,7 +241,7 @@ sub {
 .player {
    height:300px;
     margin-left:110px;
-    margin-top:65px;
+    margin-top:300px;
 }
 
 .fullscreen .player {
