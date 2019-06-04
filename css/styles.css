@@ -69,7 +69,7 @@ img{ max-width: 100%;}
 
 .sidebutton2 img{ cursor: pointer;}
 .sidebutton3 img{ cursor: pointer;}
-.main{ background: #fff; padding: 50px; height: 640px;margin-left:-200px;width:1500px; }
+.main{ background: #fff; padding: 50px; height: 750px;margin-left:-200px;width:1500px; }
 #sideButtonsWrapper{ float: left; margin-top: -534px;margin-left:100px;}
 #sideButtonsLayer{ width:auto; margin-top: 70px; }
 iframe{ border: none;}
