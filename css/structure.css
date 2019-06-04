@@ -240,8 +240,8 @@ sub {
 
 .player {
   height: 500px;
-    margin-left: 402px;
-    /* margin-top: 384px; */
+    margin-left: 426px;
+     margin-top: -480px; 
     z-index: 99999;
 }
 
