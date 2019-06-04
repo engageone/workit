@@ -58,9 +58,15 @@ img{ max-width: 100%;}
  
   
 }
+.player__iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .logo{ float: left; margin-left:-100px;}
 
-.header-action {
+.header{
     height: 75px;
     color: #fff;
     background: url(../images/pb_demo_header.jpg);
