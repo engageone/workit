@@ -320,3 +320,141 @@ var ContrastProgress = {
 
 
 
+
+
+
+
+
+
+ updateLanguage: function(langCode) {
+        Timeline.render(LanguageSelector.currentLanguageObj.ChapterSettings);
+        $("#jsTopWrapper").removeClass("top-wrapper--no-cta top-wrapper--no-promo");
+        $("#jsBottomWrapper").removeClass("bottom-wrapper--no-cta bottom-wrapper--no-promo");
+
+        // Checks whether promo or cta button content exists. If it doesn't then it adds in a css class to resize the other elements.
+        if (isEmpty(LanguageSelector.currentLanguageObj.CtaButtonSettings)) {
+            $("#jsTopWrapper").addClass("top-wrapper--no-cta");
+            $("#jsBottomWrapper").addClass("bottom-wrapper--no-cta");
+        } else {
+            CtaButtons.render(LanguageSelector.currentLanguageObj.CtaButtonSettings);
+        }
+
+        if (isEmpty(LanguageSelector.currentLanguageObj.PromoSettings)) {
+            $("#jsTopWrapper").addClass("top-wrapper--no-promo");
+            $("#jsBottomWrapper").addClass("bottom-wrapper--no-promo");
+        } else {
+            Promos.render(LanguageSelector.currentLanguageObj.PromoSettings);
+        }
+
+        //Change the text of every .translate element to current language
+        $(".translate").each(function () {
+            var translateId = $(this).data('translate');
+            if(LanguageSelector.currentLanguageObj.hasOwnProperty(translateId)){
+                $(this).text(LanguageSelector.currentLanguageObj[translateId]);
+                if($(this).parent().attr('title')){
+                    $(this).parent().attr('title',LanguageSelector.currentLanguageObj[translateId]);
+                }
+            }
+        });
+
+        //Updates the lang tag at the top of the index.php html tag
+        LanguageSelector.updateLangTag(langCode);
+
+        /*
+        * If the iframe is present and its src path already contains language=xx
+        * then replace the lang code with new code else append the language parameter to iframe src url
+        */
+        if (document.getElementById('videoPlayerIframe') != null) {
+            var iframe = document.getElementById("videoPlayerIframe"),
+                videoUrl = iframe.src;
+
+            if (videoUrl.search(/language=[a-z][a-z]/) != -1) {
+                videoUrl = videoUrl.replace(/language=../, "language=" + langCode);
+            } else if ("en" != langCode) {
+                videoUrl += '&language=' + langCode;
+            }
+
+            if (videoUrl != iframe.src) {
+                iframe.src = videoUrl;
+            }
+        }
+    },
+
+    updateLangTag: function(newLangCode){
+        $('html').attr('lang', newLangCode);
+    },
+
+    getTextByKey: function (key) {
+        if(typeof LanguageSelector.currentLanguageObj[key] === 'string'){
+            return LanguageSelector.currentLanguageObj[key];
+        }
+        return false;
+    },
+
+    /**
+     * Get available languages from navigator browser object
+     *
+     * @param {object} nav Browser Navigator object
+     *
+     * @return {array|boolean}
+     */
+    getNavigatorLanguages: function(nav) {
+        if (nav.languages) {
+            return nav.languages
+        }
+
+        var languages = [];
+
+        if (nav.language) {
+            languages.push(nav.language);
+        }
+
+        if (nav.userLanguage) {
+            languages.push(nav.userLanguage);
+        }
+
+        if (nav.browserLanguage) {
+            languages.push(nav.browserLanguage);
+        }
+
+        return languages.length ? languages : false;
+    },
+
+    /**
+     * Define the events
+     */
+    events: {
+        /**
+         * Link up the events and the event handlers
+         */
+        initialise: function() {
+            $('#jsLanguageMenuTitle').click(LanguageSelector.events.closeLanguageMenu);
+            $('.jsTimelineSettingsLanguage').click(LanguageSelector.events.languageItemClickEventHandler);
+        },
+
+        closeLanguageMenu: function (e) {
+            $('#jsSettingsButtonPopout').show();
+            $('#jsLanguageSelectorPopout').hide();
+            $("#jsLangMenuItem").focus();
+        },
+
+        languageItemClickEventHandler: function(e) {
+            var newLang = $(this).data('language');
+            LanguageSelector.loadLanguageJSON(newLang);
+            LanguageSelector.setLanguage(newLang);
+            ClosedCaptionSelector.setClosedCaptions('off');
+        }
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
