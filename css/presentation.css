@@ -332,11 +332,12 @@
     color: #fff;
    background-color: #0A5694;
     font-size: 20px;
+    height:200px;
 }
 
-.timeline__cover {
+/*.timeline__cover {
     background: #00436e;
-}
+}*/
 
 .timeline__controls {
     background-color: #337ab7;
