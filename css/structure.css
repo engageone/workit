@@ -239,9 +239,10 @@ sub {
 }
 
 .player {
-   height:300px;
-    margin-left:110px;
-    margin-top:500px;
+  height: 500px;
+    margin-left: 402px;
+    /* margin-top: 384px; */
+    z-index: 99999;
 }
 
 .fullscreen .player {
